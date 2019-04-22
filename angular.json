@@ -22,7 +22,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/web.config",
-              "src/config.json"
+              "src/environments/environment.json"
             ],
             "styles": [
               "src/styles.css"
@@ -50,6 +50,30 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            },
+            "publish": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.json",
+                  "with": "src/environments/environment.publish.json"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 }
               ]
