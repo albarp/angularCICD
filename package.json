@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-publish": "ng build --configuration=publish"
+    "build-publish": "ng build --configuration=publish",
+    "build-publish-local": "ng build --configuration=publish --base-href=/angularCICD/"
   },
   "private": true,
   "dependencies": {
