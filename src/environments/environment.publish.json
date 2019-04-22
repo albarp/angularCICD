@@ -1,4 +1,4 @@
 {
-  "envName": "@@envName@@",
-  "production": "@@production@@"
+  "envName": "#{envName}#",
+  "production": "#{production}#"
 }
