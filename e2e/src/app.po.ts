@@ -8,4 +8,12 @@ export class AppPage {
   getTitleText() {
     return element(by.css('app-root h1')).getText();
   }
+
+  getFirstLink() {
+    return element(by.xpath('//ul/li/h2/a'));
+  }
+
+  getUserNameTextBox() {
+    return element(by.id('name'));
+  }
 }
